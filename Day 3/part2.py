@@ -1,6 +1,6 @@
 with open("input.txt") as f:
     lines = f.readlines()
-    results = []
+    result = 1
     
     paths = [[1, 1], [3, 1], [5, 1], [7, 1], [1, 2]]
     for i in range(len(lines)):
@@ -16,11 +16,6 @@ with open("input.txt") as f:
             index += path[0]
             row += path[1]
         
-        results.append(trees)
+        result *= trees
 
-print(results)
-product = 1
-for i in results:
-    product *= i
-
-print(product)
+print(result)
