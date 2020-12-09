@@ -7,7 +7,7 @@ def check():
     while True:
         if index >= len(tmp):
             print(accumulator)
-            return
+            exit()
         if (tmp[index][1]):
             return
 
